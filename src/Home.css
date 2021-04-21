@@ -9,7 +9,7 @@
   height: 42rem;
   margin-top: -24rem;
   z-index: 100;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   align-items: center;
   margin-left: 12rem;
 }
-.home__container1_middle > img {
+#home_middle_image {
   width: 30rem;
   height: 20rem;
   margin-top: 0rem;
@@ -40,14 +40,17 @@
 }
 .s_v_g {
   margin-top: -1rem;
-  overflow-x: hidden;
+}
+.svg_container_back {
+  width: 100%;
+  overflow: hidden;
 }
 .home__container1_right {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 2rem;
   position: sticky;
   top: 0;
 }
@@ -340,8 +343,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20rem;
-  margin-top: 10rem;
+  justify-content: center;
+  height: 40rem;
   background-image: url("./review_back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -357,6 +360,7 @@
   margin-left: 4rem;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
+  color: rgba(0, 0, 0, 0.582);
 }
 .review_right {
   width: 30%;
@@ -398,6 +402,7 @@
   justify-content: center;
   height: 20rem;
   z-index: 3;
+  width: 100%;
 }
 .home__container5_inside {
   display: flex;
@@ -410,6 +415,7 @@
   background-color: rgb(255, 255, 255);
   opacity: 0.8;
   border-radius: 15px;
+  width: 70%;
 }
 .home__container5_title {
   font-family: "Raleway", sans-serif;
@@ -507,6 +513,9 @@
     width: 20rem;
     margin-top: 1.5rem;
   }
+  .home__container1_left_text > img {
+    margin-left: 0rem;
+  }
   .home__container4 {
     flex-wrap: wrap;
   }
@@ -527,13 +536,93 @@
   .testimonial {
     font-size: 2.5rem;
   }
+  .services_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .service_title {
+    width: 100%;
+  }
+  .service_card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 }
-@media only screen and (max-width: 402px) {
-  .home__title_down > img {
-    width: 15rem;
-    margin-top: 2.2rem;
+
+@media only screen and (max-width: 984px) {
+  .order_process_cards_list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  #home_middle_image {
+    width: 90%;
+  }
+  #compa_logo {
+    width: 90%;
+    /* margin-right: 4rem; */
+    padding-right: 4rem;
+  }
+  .home__title_down {
+    padding-left: 1rem;
   }
   .container2_photos {
     width: 9rem;
+  }
+  .review_container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #title_rev {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+  .review_right > a {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 832px) {
+  .review_content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+  }
+  .review_container > .title {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .review_left {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+}
+@media only screen and (max-width: 1092px) {
+  .home__container1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -28rem;
+  }
+  .services_container {
+    margin-top: 5rem;
+  }
+  .home__container1_middle {
+    margin: 0rem;
+  }
+  .home__container1_middle > img {
+    width: 100%;
+  }
+  .home__container1_right {
+    flex-direction: row;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  .home__title_down {
+    margin: 0rem;
   }
 }

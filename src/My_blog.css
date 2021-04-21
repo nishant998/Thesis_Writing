@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"); /* for heading */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@300&display=swap"); /* for content*/
 
+.my_blog_container{
+    background: rgb(252, 244, 232);
+}
 .blog_container2{
     display: flex;
     flex-direction: column;

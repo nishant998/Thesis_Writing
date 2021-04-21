@@ -14,8 +14,6 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
     transition: .7s;
-    /* cursor: pointer; */
-    /* min-width: 10rem; */
 }
 .about_values_card:hover{
     transform: translateY(-10px);
@@ -34,3 +32,15 @@
     height: 16rem;
     width: 100%;
 }
+
+@media only screen and (max-width: 1008px) {
+  .about_values_card{
+    height: 40rem;
+  }
+ }
+@media only screen and (max-width: 698px) {
+  .about_values_card{
+    height: 40rem;
+    width: 90%;
+  }
+ }

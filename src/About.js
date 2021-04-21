@@ -162,7 +162,7 @@ function About() {
         </div>
 
         <div className="about_values">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="svg_about">
             <path
               fill="#fff"
               fill-opacity="1"
@@ -199,7 +199,7 @@ function About() {
               content="Our group of like-minded individuals shares the same inspiration and objectives. We are a big, friendly group with mutual respect. We establish trusting relationships among employees, which defines our client relationships. Purchase your writing assignment from a reputable company."
             />
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="svg_about">
             <path
               fill="#fff"
               fill-opacity="1"

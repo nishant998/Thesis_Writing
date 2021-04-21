@@ -27,3 +27,9 @@
     margin: 0.5rem 0rem 1rem 0rem ;
     font-family: 'Raleway', sans-serif;
 }
+
+@media only screen and (max-width: 834px) {
+    .Service_card{
+        width: 60%;
+    }
+  }

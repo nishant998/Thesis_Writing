@@ -29,5 +29,12 @@
 .order_process_card_description{
 font-size: 0.8rem;
 font-family: 'Roboto', sans-serif;
-font-weight: 800;
+/* font-weight: 800; */
 }
+
+@media only screen and (max-width: 984px) {
+    .order_process_card{
+      width: 70%;
+      height: 40rem;
+    }
+   }

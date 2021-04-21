@@ -6,7 +6,7 @@ import Carousel from "react-bootstrap/Carousel"
 import zIndex from '@material-ui/core/styles/zIndex'
 function Blog_slider() {
     const mystyle = {
-        height:"70vh" ,
+        height:"80vh" ,
         zIndex : -1
       };
     return (

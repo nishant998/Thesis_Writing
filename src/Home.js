@@ -37,6 +37,7 @@ import { Link } from "@material-ui/core";
 function Home() {
   return (
     <div className="home">
+      <div className="svg_container_back">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="30rem"
@@ -50,13 +51,14 @@ function Home() {
           d="M0,288L1440,32L1440,0L0,0Z"
         ></path>
       </svg>
+      </div>
       <div className="home__container1">
         <div className="home__container1_left_text">
-          <img src={company_logo} alt="" />
+          <img src={company_logo} alt="" id="compa_logo" />
         </div>
 
         <div className="home__container1_middle">
-          <img src={home_cont3} alt="" />
+          <img src={home_cont3} alt=""  id="home_middle_image"/>
           <span className="home__title_down">
             WANT TO MAKE YOUR DISSERTATION WITH PLAGRIASM FREE CONTENT
           </span>
@@ -197,7 +199,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="home__container4">
+      {/* <div className="home__container4">
         <span className="testimonial">TESTIMONIAL</span>
         <div className="testimonial_description">
           <span className="testimonial_content">
@@ -212,7 +214,7 @@ function Home() {
         <div className="testimonial_image">
           <img src={testimonial_image} alt="my image" />
         </div>
-      </div>
+      </div> */}
 
       <div className="order_process">
         <div className="order_process_title">Ordering Process</div>
@@ -250,7 +252,7 @@ function Home() {
       </div>
 
       <div className="review_container">
-        <span className="title">
+        <span className="title" id="title_rev">
           REVIEWS & RATINGS - RAHUL PROJECTS AND DISSERTATIONS
         </span>
         <div className="review_content">
@@ -277,8 +279,7 @@ function Home() {
         <div className="home__container5_inside">
           <span className="home__container5_title">Register Yourself</span>
           <span className="home__container5_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            odio!
+           Sign up right now to get connected with us 
           </span>
           <div className="home__container5_form">
             <Home__form />
