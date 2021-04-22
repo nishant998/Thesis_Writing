@@ -126,13 +126,13 @@ textarea {
 }
 
 .con_icon_fb_icon {
-  color: blue;
+  color: rgb(28, 0, 185);
 }
-.con_icon_tw_icon {
-  color: blue;
+.con_icon_wt_icon {
+  color: rgb(28, 0, 185);
 }
-.con_icon_li_icon {
-  color: blue;
+.con_icon_ig_icon {
+  color: rgb(28, 0, 185);
 }
 .container2__right_3 {
   display: flex;

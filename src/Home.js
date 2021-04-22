@@ -1,16 +1,16 @@
 import React from "react";
 import "./Home.css";
 import FacebookIcon from "@material-ui/icons/Facebook";
-// import { Link } from 'react-router-dom'
-// import { Button } from 'semantic-ui-react';
 import Button from "@material-ui/core/Button";
 import My_blog from "./My_blog.js";
 import Home__form from "./Home__form.js";
 import Home_card from "./Home_card.js";
 import Order_process_card from "./Order_process_card.js";
 import Service_card from "./Service_card.js";
+import Carousel from "react-elastic-carousel"
+import ReactDOM from "react-dom";
+import Item_for_review from "./Item_for_review.js"
 import RateReviewIcon from "@material-ui/icons/RateReview";
-import testimonial_image from "./Testimonial_pic.jpg";
 import about_photo1 from "./about_photo1.jpg";
 import about_photo2 from "./about_photo2.jpg";
 import about_photo3 from "./about_photo3.jpg";
@@ -26,6 +26,8 @@ import order2 from "./order2.jpg";
 import order3 from "./order3.svg";
 import order4 from "./order4.svg";
 import just_dial from "./just_dial.svg";
+import JD_ratings1 from "./JD_ratings1.png"
+import JD_ratings2 from "./JD_ratings2.png"
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import arrow from "./arrow_png.png";
@@ -33,8 +35,15 @@ import company_logo from "./company_logo.png";
 import home_cont3 from "./home_cont_3.svg";
 import name1 from "./name1.png";
 import { Link } from "@material-ui/core";
+// import { Carousel } from "bootstrap";
 
 function Home() {
+  const breakPoints = [
+   {width :1 , itemsToShow : 1} ,
+   {width :1200 , itemsToShow : 2} ,
+   {width :1700 , itemsToShow : 3} ,
+   {width :2000 , itemsToShow : 4} ,
+  ] ;
   return (
     <div className="home">
       <div className="svg_container_back">
@@ -55,6 +64,8 @@ function Home() {
       <div className="home__container1">
         <div className="home__container1_left_text">
           <img src={company_logo} alt="" id="compa_logo" />
+          <img src={JD_ratings1} alt="" id="comp_review"/>
+          <img src={JD_ratings2} alt="" id="comp_review2"/>
         </div>
 
         <div className="home__container1_middle">
@@ -72,7 +83,7 @@ function Home() {
           </div>
 
           <div className="home__container1_right_option whats_app">
-            <a href="https://wa.me/8860950741">
+            <a href="https://wa.me/8368037530">
               <WhatsAppIcon className="right_option_icon whats_app_icon" />
             </a>
           </div>
@@ -112,14 +123,12 @@ function Home() {
           <img src={about_photo2} alt="no idea" className="container2_photos" />
           <img src={about_photo3} alt="no idea" className="container2_photos" />
           <img src={about_photo4} alt="no idea" className="container2_photos" />
-          <img src={about_photo5} alt="no idea" className="container2_photos" />
-          <img src={about_photo6} alt="no idea" className="container2_photos" />
         </div>
 
         <div className="home__container2_about">
           <span className="about__text">About</span>
           <span className="about__text_under">
-            Lorem ipsum dolor sit amet consectetur .
+          Rahuls Project consists of a group of experts in the field of academic writing, editing, and proofreading .
           </span>
           <span className="home__container2_content">
             Our writing firm is a welcoming community where you are always
@@ -186,35 +195,16 @@ function Home() {
           <div className="container3_right_container">
             <div className="container3_right_title">My best blog</div>
             <div className="container3_right_content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              adipisci exercitationem harum. Architecto quod voluptas incidunt
-              mollitia maiores sequi velit ea facilis quam eos inventore
-              laboriosam veritatis, voluptatem tenetur dolores.
+            In our daily lives, we all encounter Intellectual property in one form or another. From the moment one wakes up till bedtime, this intangible property in its various forms is all around us. The first cup of tea or coffee in the morning is consumed because something about the product appealed to the consumer. Perhaps there was a brand recall (trade marks) which warranted that the particular beverage from the particular manufacturer only be purchased for consumption.
             </div>
             <div className="container3_right_content_button">
-              <Button variant="outlined" color="primary">
+              <Button variant="outlined" color="primary" id="button_my_blog">
                 <a href="./Myblog">Learn More</a>
               </Button>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="home__container4">
-        <span className="testimonial">TESTIMONIAL</span>
-        <div className="testimonial_description">
-          <span className="testimonial_content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nam
-            architecto optio corrupti labore, eum totam eligendi quia iusto
-            doloremque officiis eius quis deserunt quisquam similique ratione
-            sapiente! Exercitationem, minus.
-          </span>
-          <span className="testimonial_name">Rahul Singh</span>
-          <span className="testimonial_work">Former CIA Agent</span>
-        </div>
-        <div className="testimonial_image">
-          <img src={testimonial_image} alt="my image" />
-        </div>
-      </div> */}
 
       <div className="order_process">
         <div className="order_process_title">Ordering Process</div>
@@ -224,32 +214,57 @@ function Home() {
             image={order1}
             content="The order process starts with the form, where you need to specify the type of research, guidelines, academic level, and deadline. Send  out  as more detailed and accurate as you can.
    If we need more details about the work you need, we will contact you"
-          />
+   />
           <img src={arrow} alt="" className="order_process_arrow" />
           <Order_process_card
             title="Assistance with writers about the work"
             image={order2}
             content="We will connect you with the writers of your subjects to get your research purpose and discuss doubts or any special requirement you want you can discuss"
-          />
+            />
           <img src={arrow} alt="" className="order_process_arrow" />
           <Order_process_card
             title="Easy pricing process"
             image={order3}
             content="Once you discuss  the details with the writer and get fully satisfied then we will give you the quotation after few minutes.
    Our process of chapter wise payment will get you more trust in us and will be updated about your work and can give us changes in meantime."
-          />
+   />
           <img src={arrow} alt="" className="order_process_arrow" />
           <Order_process_card
             title="Order completed"
             image={order4}
             content="When the deadline comes, you will receive the completed research  with turn tin plagiarism report in your mailbox and to the personal account as well.
    Check and review the paper you get and if you have any question - let us know, we appreciate any feedback you give us"
-          />
+   />
         </div>
         <Button variant="outlined" color="primary">
           <a href="./Contact">Order Now</a>
         </Button>
       </div>
+
+     <div className="review_slider">
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 765 290">
+  <path fill="#fcce98" fill-opacity="1" d="M0,192L1440,64L1440,0L0,0Z"></path>
+</svg>
+<Carousel breakPoints = {breakPoints} className="carousal_items">
+  <Item_for_review
+  image={about_photo1}
+  review = "I was bit hesitant at first to approach such an organization for research assistance, but it turned out to be of great help and they provided me with really good services.They were humble and assisted me throughout..!"
+  name = "Vdhu"/>
+  <Item_for_review
+  image={about_photo2}
+  review = "I am glad to write here that Rahul Projects and Dissertations helped me a lot to provide me the best thesis for my Ph.d. I expressed my sincere attempt especially to Mr. Shubham Mishra and his team. I shall be highly obliged to this team. Keep on doing sir. Thank you once again. May you get stupendous success in your life."
+  name = "Jyoti Sharma"/>
+  <Item_for_review 
+  image={about_photo3}
+  review = "Great work done by them on time .nice behaviour ,best writing professional s"
+  name = "Karuna"/>
+  <Item_for_review
+  image={about_photo4}
+  review = "Great work, delivered on time"
+  name = "Gajendra Chaudhary"/>
+</Carousel>
+     </div>
+      
 
       <div className="review_container">
         <span className="title" id="title_rev">

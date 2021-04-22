@@ -14,10 +14,23 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.home__container1_left_text > img {
+#compa_logo {
   width: 20rem;
   height: 20rem;
   margin-top: -20rem;
+  margin-left: -4rem;
+}
+#comp_review {
+  width: 28rem;
+  height: 15rem;
+  margin-top: -5rem;
+  margin-left: -4rem;
+}
+#comp_review2 {
+  visibility: hidden;
+  width: 23rem;
+  height: 11rem;
+  margin-top: -5rem;
   margin-left: -4rem;
 }
 .home__container1_middle {
@@ -173,7 +186,8 @@
   padding-top: 11rem;
   margin-top: -7rem;
   align-items: center;
-  background-color: rgb(235, 235, 233);
+  /* background-color: rgb(235, 235, 233); */
+  background-color: #f8ecde;
 }
 .home__container2_about {
   display: flex;
@@ -192,9 +206,9 @@
   margin-right: 1rem;
 }
 .container2_photos {
-  width: 10rem;
+  width: 15rem;
   border-radius: 10px;
-  height: 10rem;
+  height: 15rem;
   margin: 1rem;
 }
 .about__text {
@@ -218,7 +232,8 @@
   justify-content: center;
   padding: 4rem 0rem;
   /* background-color: rgb(235, 235, 233); */
-  background: rgb(241, 241, 240);
+  /* background: rgb(241, 241, 240); */
+  background-color: rgb(255, 215, 215);
 }
 .home__container3_left {
   display: flex;
@@ -235,6 +250,8 @@
   margin-right: 1rem;
   border-radius: 15px;
   height: 30rem;
+  align-items: center;
+  justify-content: center;
 }
 .home_card {
   margin: 1rem 1rem 1rem 1rem;
@@ -242,11 +259,17 @@
 .container3_right_container {
   display: flex;
   flex-direction: column;
-  margin: 5rem 1rem;
   background-color: #ffffff;
   border-radius: 15px;
   opacity: 0.4;
   padding: 0rem 1rem;
+  height: 80%;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 800;
+}
+#button_my_blog {
+  margin-bottom: 1rem;
 }
 .container3_right_container:hover {
   opacity: 0.7;
@@ -261,8 +284,8 @@
 }
 .container3_right_content {
   font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
   font-weight: bold;
 }
 .container3_right_content_button {
@@ -275,7 +298,8 @@
 .home__container4 {
   display: flex;
   align-items: center;
-  background-color: rgb(235, 235, 233);
+  /* background-color: rgb(235, 235, 233); */
+  background-color: #f8e9d7;
   padding: 3rem 2rem;
   padding-bottom: 5rem;
 }
@@ -314,13 +338,14 @@
 }
 
 .order_process {
+  background-color: #fcebd7;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 0rem 2rem 0rem;
-  background: rgb(241, 241, 240);
+  /* background: rgb(241, 241, 240); */
 }
 .order_process_arrow {
   width: 3rem;
@@ -339,13 +364,22 @@
   justify-content: space-around;
   align-items: center;
 }
+.review_slider {
+  padding-bottom: 1rem;
+  /* background-color: rgb(255, 215, 215); */
+  background-color: rgb(255, 153, 0);
+}
+.carousal_items {
+  margin-top: -22rem;
+}
 .review_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 40rem;
-  background-image: url("./review_back.jpg");
+  /* background-image: url("./review_back.jpg"); */
+  background-image: url("./just_dial_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -358,9 +392,10 @@
 .review_left {
   width: 50%;
   margin-left: 4rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
-  color: rgba(0, 0, 0, 0.582);
+  color: rgb(0, 0, 0);
 }
 .review_right {
   width: 30%;
@@ -513,7 +548,14 @@
     width: 20rem;
     margin-top: 1.5rem;
   }
-  .home__container1_left_text > img {
+  #compa_logo {
+    margin-left: 0rem;
+    margin-top: -5rem;
+  }
+  #comp_review {
+    margin-left: 0rem;
+  }
+  #comp_review2 {
     margin-left: 0rem;
   }
   .home__container4 {
@@ -565,9 +607,21 @@
     width: 90%;
   }
   #compa_logo {
-    width: 90%;
+    width: 70%;
     /* margin-right: 4rem; */
-    padding-right: 4rem;
+    /* padding-right: 6rem; */
+    margin-top: -30rem;
+  }
+  #comp_review {
+    visibility: hidden;
+    width: 2rem;
+    height: 25rem;
+  }
+  #comp_review2 {
+    visibility: visible;
+    margin-top: -24rem;
+    margin-bottom: 4rem;
+    width: 70%;
   }
   .home__title_down {
     padding-left: 1rem;
@@ -586,13 +640,16 @@
   .review_right > a {
     font-size: 1rem;
   }
+  .home__container1_left_text {
+    margin: 16rem 0rem 0rem 3rem;
+  }
 }
 @media only screen and (max-width: 832px) {
   .review_content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    /* background: white; */
   }
   .review_container > .title {
     margin: 0rem;
@@ -624,5 +681,32 @@
   }
   .home__title_down {
     margin: 0rem;
+  }
+}
+@media only screen and (max-width: 1111px) {
+  #compa_logo {
+    margin-top: -17rem;
+  }
+  #home_middle_image {
+    width: 90%;
+    height: 15rem;
+    margin-top: -5rem;
+  }
+  .home__container1 {
+    height: 50rem;
+  }
+  .review_slider {
+    height: 30rem;
+  }
+  .carousal_items {
+    margin-top: -17rem;
+  }
+}
+@media only screen and (max-width: 1111px) {
+  .review_slider {
+    height: 35rem;
+  }
+  .carousal_items {
+    margin-top: -8rem;
   }
 }

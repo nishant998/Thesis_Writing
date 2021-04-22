@@ -10,6 +10,8 @@ import EmailIcon from "@material-ui/icons/Email";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import InstagramIcon from "@material-ui/icons/Instagram";
 
 function Contact() {
   const [input_values, set_input_Values] = useState({
@@ -35,9 +37,9 @@ function Contact() {
     <div className="contact_page">
       <div className="contact_page_container1">
         <img className="contact_us_img" src={contact_us_image} alt="" />
-        <div className="contact_page_container1_title">Lorem, ipsum dolor.</div>
+        <div className="contact_page_container1_title">CONTACT US.</div>
         <div className="contact_page_container1_description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cum!
+          Just message us without any hesitation and we will contact you soon .
         </div>
       </div>
       <div className="contact_page_container2">
@@ -122,19 +124,19 @@ function Contact() {
             <span className="con_icon">
               <LocationOnIcon />
             </span>{" "}
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+           G-21 Dmall , Indirapuram Ghaziabad , Uttar Pradesh 201014
           </span>
           <span className="container2__right_2">
             <span className="con_icon">
               <PhoneAndroidIcon />
             </span>{" "}
-            +91 8860950741
+            +91 8368037530
           </span>
           <span className="container2__right_2">
             <span className="con_icon">
               <EmailIcon />
             </span>{" "}
-            choudharynishantplawat@gmail.com
+            rahulprojects12@gmail.com
           </span>
           <span className="container2__right_3">
             <div className="con_icon_fb">
@@ -143,17 +145,17 @@ function Contact() {
               </a>
             </div>
 
-            <div className="con_icon_tw">
-              <a href="https://www.twitter.com">
-                <TwitterIcon className="con_icon_tw_icon" />
-              </a>
-            </div>
+            <div className="con_icon_wt">
+            <a href="https://wa.me/8368037530">
+              <WhatsAppIcon className="con_icon_wt_icon" />
+            </a>
+          </div>
+          <div className="con_icon_ig">
+            <a href="https://www.instagram.com">
+              <InstagramIcon className="con_icon_ig_icon" />
+            </a>
+          </div>
 
-            <div className="con_icon_li">
-              <a href="https://www.linkedin.com">
-                <LinkedInIcon className="con_icon_li_icon" />
-              </a>
-            </div>
           </span>
         </div>
       </div>
