@@ -155,39 +155,39 @@ function Home() {
         <div className="home__container3_left">
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="INTRODUCTION"
+            title="PROPERTY RIGHTS"
+            content="The Common Law and other statutes also cover trust, dismissal, trade dragonfly ."
           />
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="INTRODUCTION"
+            title="STRATEGIC BUSINESS MANAGEMENT"
+            content="This essay discusses strategic management as an important concept in corporate strategy."
           />
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="FINAL DISSERTATION"
+            title="FOOD AND BEVERAGES"
+            content="Food is the essential need of any living being, to endure, and to support"
           />
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="FINAL DISSERTATION"
+            title="RIGHT TO HEALTH"
+            content="Legal creations that have a territorial existence effectively are rights to service marks such as patents and associated rights"
           />
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="FINAL DISSERTATION"
+            title="PATENT WORKING"
+            content="Intellectual Property Right is a subject that deals with the rights of the owner of any property."
           />
           <Home_card
             className="home_card"
-            top="Lorem, ipsum."
-            title="Lorem ipsum dolor sit."
-            content="Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor."
+            top="FINAL DISSERTATION"
+            title="SERVICE MARK"
+            content="Legal creations that have a territorial existence effectively are rights to service marks such as patents and associated rights"
           />
         </div>
 
@@ -241,6 +241,7 @@ function Home() {
         </Button>
       </div>
 
+       <div className="cus_title">Customer Review</div>
      <div className="review_slider">
      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 765 290">
   <path fill="#fcce98" fill-opacity="1" d="M0,192L1440,64L1440,0L0,0Z"></path>
@@ -273,15 +274,7 @@ function Home() {
         <div className="review_content">
           <div className="review_left">
             <span>
-              Rahul Projects and Dissertations in Ghaziabad, Delhi is one of the
-              leading businesses in the Thesis Writing Services. Also known for
-              Thesis Writing Services, PHD Thesis Writing Services, M Tech
-              Thesis Writing Services, Thesis Writing Services For Master Of
-              Education, MBA Assignment Writing Services, Plagiarism Checking
-              Services, Thesis Writing Services For Computer Science, Law Thesis
-              Writing Services and much more. Find Address, Contact Number,
-              Reviews & Ratings, Photos, Maps of Rahul Projects and
-              Dissertations, Ghaziabad, Delhi.
+            OUR COMPANY IS ASSOCIATED WITH JUST DIAL FOR MORE THAN 3 YEARS AND BUILD A FAMILY OF CUSTOMERS THROUGH THEM . OUR CURRENT RATING IN JUST DIAL IS 4.8 WITH MORE THAN 350 REVIEWS HIGHEST IN OUR FILED .WE HAVE BUILD NETWORK OF STUDENTS FROM ALL OVER INDIA AND ABRAOD THROUGH JUST DIAL AND WILL CONTINUE FOREVER .RIGHT NOW WE ARE CURRENTLY AVAILABLE IN DELHI NCR,CHANDIGARH, JAIPUR CLICK HERE TO SEE MORE :-
             </span>
           </div>
           <div className="review_right">

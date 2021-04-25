@@ -13,6 +13,8 @@ import about_values2 from "./about_values2.svg";
 import about_values3 from "./about_values3.svg";
 import about_values4 from "./about_values4.svg";
 import about_values5 from "./about_values5.svg";
+import team1 from "./team1.jpeg"
+import team2 from "./team2.jpeg"
 
 function About() {
   return (
@@ -212,12 +214,18 @@ function About() {
       <div className="about_container15">
         <span className="my_team_profile">Our team</span>
         <div className="about_container15_cards">
-          <About_card />
-          <About_card />
-          <About_card />
-          <About_card />
-          <About_card />
-          <About_card />
+          <About_card 
+          image={team1}
+          title = "(RAHUL) FOUNDER AND CEO"
+          content = "MBA IN MARKETING AND HR , FROM GAUTAM BUDDHA UNIVERSITY"/>
+          <About_card 
+          image={team2}
+          title = "Manika garg"
+          content = "Research scholar , Bio chemistry , Jamia hamdard"/>
+          <About_card 
+          image={team1}
+          title = "this is me"
+          content = "yes it is"/>
         </div>
       </div>
     </div>
