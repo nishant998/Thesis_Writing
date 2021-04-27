@@ -3,6 +3,14 @@
 .header__contact {
   background-color: rgb(19, 19, 63);
 }
+.footer_link{
+  text-decoration: none;
+  color: white;
+}
+.footer_link:hover{
+  text-decoration: none;
+  color: rgb(145, 142, 142);
+}
 .footer_foo {
   display: flex;
   align-items: center;

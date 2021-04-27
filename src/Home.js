@@ -283,7 +283,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="home__container5">
+      {/* <div className="home__container5">
         <div className="home__container5_inside">
           <span className="home__container5_title">Register Yourself</span>
           <span className="home__container5_content">
@@ -293,7 +293,7 @@ function Home() {
             <Home__form />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

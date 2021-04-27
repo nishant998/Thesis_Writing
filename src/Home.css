@@ -364,13 +364,12 @@
   justify-content: space-around;
   align-items: center;
 }
-.cus_title{
+.cus_title {
   color: orange;
   font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
   margin-left: 44%;
-  
 }
 .review_slider {
   padding-bottom: 1rem;
@@ -378,7 +377,7 @@
   background-color: rgb(255, 153, 0);
 }
 .carousal_items {
-  margin-top: -22rem;
+  margin-top: -26rem;
 }
 .review_container {
   display: flex;
@@ -707,13 +706,23 @@
     height: 30rem;
   }
   .carousal_items {
-    margin-top: -17rem;
+    margin-top: -19rem;
   }
 }
 @media only screen and (max-width: 1111px) {
   .review_slider {
-    height: 35rem;
+    height: 30rem;
   }
+  /* .carousal_items {
+    margin-top: -8rem;
+  } */
+}
+@media only screen and (max-width: 836px) {
+  .carousal_items {
+    margin-top: -13rem;
+  }
+}
+@media only screen and (max-width: 558px) {
   .carousal_items {
     margin-top: -8rem;
   }

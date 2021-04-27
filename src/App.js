@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-
       <div className="Header__container">
         <Router>
           <div className="Header__nav">
@@ -27,23 +26,40 @@ function App() {
 
       <div className="home__container6">
         <div className="home__container6_left">
-          <span className="home__container6_left_title">Rahul Projects</span>
+          <span className="home__container6_left_title">RAHUL PROJECTS</span>
           <span className="home__container6_left_content">
             <p>Decide and take a step.</p>
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem, ipsum dolor.</p>
+            <p>Get dissertations soon</p>
+            <p>Order now for discount</p>
           </span>
         </div>
         <div className="home__container6_middle">
-          <span className="home__container6_middle_title">Footer menu</span>
+          <span className="home__container6_middle_title">MENU</span>
           <span className="home__container6_middle_content">
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Lorem ipsum dolor sit.</p>
+            <p>
+              <a href="./" className="footer_link">
+                Home
+              </a>
+            </p>
+            <p>
+              <a href="./Myblog" className="footer_link">
+                My Blog
+              </a>
+            </p>
+            <p>
+              <a href="./About" className="footer_link">
+                About
+              </a>
+            </p>
+            <p>
+              <a href="./Contact" className="footer_link">
+                Contact
+              </a>
+            </p>
           </span>
         </div>
         <div className="home__container6_right">
-          <span className="home__container6_right_title">Contact info</span>
+          <span className="home__container6_right_title">CONTACT INFO</span>
           <span className="home__container6_right_content">
             <p>rahulprojects12@gmail.com</p>
             <p>+91-8368037530</p>

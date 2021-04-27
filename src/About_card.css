@@ -28,6 +28,8 @@
   margin-top: -6rem;
   align-items: center;
   justify-content: center;
+  background-color: black;
+  opacity: 0.6;
 }
 .about_card_title {
   font-family: "Raleway", sans-serif;
@@ -36,7 +38,7 @@
   letter-spacing: 2px;
   word-spacing: 4px;
   margin: 0rem 0rem 0rem 0rem;
-  color: rgb(120, 105, 253);
+  color: rgb(255, 187, 0);
 }
 .about_card_description {
   font-family: "Roboto", sans-serif;
